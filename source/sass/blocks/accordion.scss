@@ -1,0 +1,19 @@
+.accordion {
+  @include vp-767 {
+    &--open .contacts__wrapper,
+    &--open .footer-navigation__list-container {
+      display: block;
+      padding-bottom: 20px;
+    }
+
+    &--open .contacts__title,
+    &--open .footer-navigation__title {
+      padding-bottom: 15px;
+    }
+
+    &--open .footer-navigation__title::before,
+    &--open .contacts__title::before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.social__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include vp-767 {
+    justify-content: center;
+  }
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
+}
+
+.social__icon {
+  display: block;
+}

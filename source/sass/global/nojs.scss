@@ -1,0 +1,14 @@
+.nojs {
+  & .contacts__wrapper,
+  & .footer-navigation__list-container {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  & .footer-navigation__title::before,
+  & .footer-navigation__title::after,
+  & .contacts__title::before,
+  & .contacts__title::after {
+    display: none;
+  }
+}

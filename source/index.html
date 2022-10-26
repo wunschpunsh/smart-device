@@ -40,14 +40,14 @@
                 width="215"
                 height="55"
               >
-                <use xlink:href="img/sprite_auto.svg#header-logo"></use>
+                <use xlink:href="img/sprite_auto.svg#main-logo"></use>
               </svg>
               <svg
                 class="main-nav__logo main-nav__logo--phone-visible"
                 width="35"
                 height="35"
               >
-                <use xlink:href="img/sprite_auto.svg#header-logo-small"></use>
+                <use xlink:href="img/sprite_auto.svg#logo-small"></use>
               </svg>
             </a>
             <ul class="main-nav__list">
@@ -73,8 +73,116 @@
         </div>
       </header>
       <main></main>
-      <footer>
-        <div class="container"></div>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__container">
+            <div class="main-footer__logo-container social">
+              <a href="#" class="main-footer__logo-link">
+                <span class="visually-hidden">Логотип магазина</span>
+                <svg class="main-footer__logo" width="215" height="55">
+                  <use xlink:href="img/sprite_auto.svg#main-logo"></use>
+                </svg>
+              </a>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Мы в одноклассниках</span>
+                    <svg class="social__icon" width="30" height="30">
+                      <use xlink:href="img/sprite_auto.svg#ok-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Мы в вк</span>
+                    <svg class="social__icon" width="30" height="30">
+                      <use xlink:href="img/sprite_auto.svg#vk-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Мы в пинтересте</span>
+                    <svg class="social__icon" width="30" height="30">
+                      <use
+                        xlink:href="img/sprite_auto.svg#pinterest-logo"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="main-footer__nav-container footer-navigation contacts accordion"
+            >
+              <!-- На этот блок вешается класс открытия - закрытия аккордеона accordion--open и класс nojs при отключенном JavaScript-->
+              <div class="footer-navigation__container" data-accordion-item>
+                <h3 class="footer-navigation__title" data-accordion-button>
+                  Разделы сайта
+                </h3>
+                <div class="footer-navigation__list-container">
+                  <ul class="footer-navigation__list">
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link">О Компании</a>
+                    </li>
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link">Продукты</a>
+                    </li>
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link"
+                        >Производство печатных плат</a
+                      >
+                    </li>
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link"
+                        >Монтаж печатных плат</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="footer-navigation__list">
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link"
+                        >Комплектующие</a
+                      >
+                    </li>
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link">Доставка</a>
+                    </li>
+                    <li class="footer-navigation__item">
+                      <a href="#" class="footer-navigation__link">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- На этот блок вешается класс открытия - закрытия аккордеона accordion--open и класс nojs при отключенном JavaScript-->
+              <div class="contacts__container" data-accordion-item>
+                <h3 class="contacts__title" data-accordion-button>Наш офис</h3>
+                <div class="contacts__wrapper">
+                  <span class="contacts__address"
+                    >г. Мытищи, Олимпийский проспект,<br />д.10</span
+                  >
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <a href="tel:+74955894050" class="contacts__link"
+                        >+7 (495) 589-40-50</a
+                      >
+                    </li>
+                    <li class="contacts__item">
+                      <a href="tel:+79253895829" class="contacts__link"
+                        >+7 (925) 389-58-29</a
+                      >
+                    </li>
+                    <li class="contacts__item">
+                      <a href="tel:+79253647813" class="contacts__link"
+                        >+7 (925) 364-78-13</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 
