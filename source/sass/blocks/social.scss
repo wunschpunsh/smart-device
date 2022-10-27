@@ -18,6 +18,21 @@
 .social__link {
   display: block;
   padding: 5px;
+
+  @include hover {
+    opacity: 0.7;
+  }
+
+  @include focus {
+    outline: 2px solid $color-alica-blue;
+    border-radius: 3px;
+  }
+
+  @include active {
+    & svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__icon {

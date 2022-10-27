@@ -96,6 +96,22 @@
   white-space: nowrap;
   color: $color-alica-blue;
 
+  @include hover {
+    color: $color-background-deep-sky-blue;
+    & .main-nav__icon {
+      fill: $color-alica-blue;
+    }
+  }
+
+  @include focus {
+    outline: 2px solid $color-background-deep-sky-blue;
+    border-radius: 1px;
+  }
+
+  @include active {
+    opacity: 0.7;
+  }
+
   @include vp-1023 {
     padding: 10px;
   }
@@ -104,6 +120,7 @@
 .main-nav__icon {
   display: block;
   margin-right: 15px;
+  fill: $color-background-deep-sky-blue;
 
   @include vp-1023 {
     margin: 0;
@@ -124,6 +141,19 @@
   border-radius: 3px;
   background-color: transparent;
   color: $color-alica-blue;
+
+  @include hover {
+    color: $color-background-deep-sky-blue;
+    border: 1px solid $color-background-deep-sky-blue;
+  }
+
+  @include focus {
+    outline: 2px solid $color-background-deep-sky-blue;
+  }
+
+  @include active {
+    opacity: 0.7;
+  }
 
   @include vp-1023 {
     display: none;
