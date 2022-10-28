@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {activateFooterAccordion} from './modules/modals/accordion.js';
+import {showMore} from './modules/modals/show-more.js';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     activateFooterAccordion();
+    showMore();
   });
 });
 

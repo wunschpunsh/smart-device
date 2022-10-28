@@ -1,0 +1,41 @@
+.service {
+  background-color: $color-black-pearl;
+}
+
+.service__container {
+  padding: 70px 0 140px;
+
+  @include vp-1023 {
+    padding: 60px 0 75px;
+  }
+
+  @include vp-767 {
+    padding: 50px 25px 86px;
+  }
+}
+
+.service__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+
+  &--phone-visible {
+    display: none;
+  }
+}
+
+.service__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 85px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1023 {
+    display: block;
+  }
+}

@@ -143,14 +143,25 @@
         </section>
         <section class="info-company">
           <div class="container">
+            <!-- На этот блок вешается класс nojs, который скрывает кнопку -->
             <div class="info-company__container">
               <h2 class="info-company__title">О компании</h2>
-              <img
-                src="./img/current-year.png"
-                width="150"
-                height="320"
-                alt="Изборажение текущего года."
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/current-year.webp,
+                    ./img/current-year@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./img/current-year.png"
+                  width="150"
+                  height="320"
+                  alt="Изборажение текущего года."
+                />
+              </picture>
               <p>
                 Мы поставляем электронные комплектующие, производим печатные
                 платы и предоставляем мировые технологии с 1997 года. Выполняем
@@ -159,16 +170,61 @@
 
               <p>
                 Наши поставщики - мировые производители электронных компонентов:
-                OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и
-                комплектующие Service Devices применяются на предприятиях
-                Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
-                МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
-                Производители светотехники России.
+                OSRAM, CREE, HOLGLITRONIC, REFOND.<span>
+                  Печатные платы и комплектующие Service Devices применяются на
+                  предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
+                  (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
+                  крупнейшие Производители светотехники России.</span
+                >
               </p>
 
+              <p>
+                Smart Device - это команда профессионалов. Через нас прошло
+                более 1 000 000 клиентов, 70% из которых продолжают
+                сотрудничество по сей день. На данный момент насчитывается более
+                14 офисов по всей стране и 20 городов присутствия.
+              </p>
+
+              <p>
+                Мы стремимся к постоянному развитию и повышению уровня качества
+                продукции, производимой внутри компании. Использование
+                инновационных технологий помогает экономить деньги и время наших
+                клиентов
+              </p>
               <button class="info-company__button" type="button">
                 Подробнее
               </button>
+            </div>
+          </div>
+        </section>
+        <section class="service">
+          <div class="container">
+            <div class="service__container">
+              <h2 class="service__title service__title--visible">
+                Smart Device предлагает следующие товары и услуги
+              </h2>
+              <h2 class="service__title service__title--phone-visible">
+                Товары и услуги Smart Device
+              </h2>
+              <ul class="service__list">
+                <li class="service__item card card--production">
+                  <a href="#" class="card__link">
+                    <h3 class="card__title">Производство печатных плат</h3>
+                  </a>
+                </li>
+                <li class="service__item card card--assembly">
+                  <a href="#" class="card__link">
+                    <h3 class="card__title">Монтаж печатных плат</h3>
+                  </a>
+                </li>
+                <li class="service__item card card--accessories">
+                  <a href="#" class="card__link">
+                    <h3 class="card__title">
+                      Комплектующие для&nbsp;светотехники
+                    </h3>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
