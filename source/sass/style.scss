@@ -34,6 +34,10 @@
 @import "blocks/info-company.scss";
 @import "blocks/service.scss";
 @import "blocks/card.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";
+@import "blocks/main-content.scss";
+@import "blocks/success.scss";
 
 // ---------------------------------
 
@@ -51,7 +55,7 @@
       @content;
     }
   }
-*/
+
 /*  @include hover-focus {
       opacity: 0.8;
     }

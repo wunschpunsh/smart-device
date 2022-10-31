@@ -72,7 +72,7 @@
           </nav>
         </div>
       </header>
-      <main>
+      <main class="main-content">
         <section class="intro">
           <div class="container">
             <div class="intro__container">
@@ -80,7 +80,7 @@
               <p class="intro__description">
                 производство и монтаж, поставка комплектующих, блоков и модулей
               </p>
-              <a class="intro__button" href="#"
+              <a class="intro__button" href="#feedback"
                 ><span class="intro__button-text intro__button-text--visible"
                   >Получить бесплатную консультацию</span
                 >
@@ -228,6 +228,86 @@
             </div>
           </div>
         </section>
+        <section class="feedback" id="feedback">
+          <div class="container">
+            <div class="feedback__container">
+              <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+              <p class="feedback__description">
+                Мы проконсультируем Вас бесплатно
+              </p>
+              <form
+                action="https://echo.htmlacademy.ru/"
+                class="feedback__form form"
+                method="POST"
+              >
+                <div class="form__input-container">
+                  <div class="form__input form__item">
+                    <label class="visually-hidden" for="user-name"
+                      >Ваше имя</label
+                    >
+                    <input
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      placeholder="Имя"
+                      pattern="^(?!\s)[a-zA-Zа-яА-ЯёЁ\s]*$"
+                      required
+                    />
+                  </div>
+                  <div class="form__input form__item">
+                    <label class="visually-hidden" for="user-phone"
+                      >Ваш номер телефона</label
+                    >
+                    <input
+                      type="tel"
+                      id="user-phone"
+                      name="user-phone"
+                      minlength="14"
+                      maxlength="18"
+                      pattern=".{0}|.{14,}"
+                      placeholder="Телефон"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form__text-container">
+                  <label class="visually-hidden" for="text-question"
+                    >Ваш вопрос?</label
+                  >
+                  <textarea
+                    name="question"
+                    id="text-question"
+                    placeholder="Ваш вопрос"
+                  ></textarea>
+                </div>
+                <div class="form__send-container">
+                  <button class="form__send-button" type="submit">
+                    Задать вопрос
+                  </button>
+                  <h3 class="visually-hidden">
+                    Согласие на обработку персональных данных
+                  </h3>
+                  <label class="form__send-text-field form__item">
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      id="personal-data"
+                      name="personal-data"
+                      checked
+                      title="Подтвердите согласие на обработку персональных данных"
+                      required
+                    />
+                    <span class="form__send-mark"></span>
+                    <span class="form__send-text"
+                      >Я согласен на обработку персональных данных</span
+                    >
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="main-footer">
         <div class="container">
@@ -342,6 +422,13 @@
           </div>
         </div>
       </footer>
+      <!-- Сообщение об успешной отправке формы -->
+      <section class="success visually-hidden">
+        <div class="success__inner">
+          <h2 class="success__title">В ближайшее время мы с Вами свяжемся</h2>
+          <button type="button" class="success__button">Круто!</button>
+        </div>
+      </section>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

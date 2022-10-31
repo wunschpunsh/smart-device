@@ -1,0 +1,88 @@
+.feedback {
+  position: relative;
+  background-color: $color-background-deep-sky-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 24, 39, 0.5);
+    clip-path: polygon(0 100%, 0 0, 50% 0);
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}
+
+.feedback__container {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  padding: 170px 10px 250px 20px;
+
+  @include vp-1023 {
+    width: 100%;
+    padding: 50px 0 125px;
+  }
+
+  @include vp-767 {
+    padding: 50px 25px 90px;
+  }
+
+  &::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 28%;
+    left: -100%;
+    width: 100%;
+    height: 285px;
+    background-image: url("../../img/paper-airplane.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.feedback__description {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: $ff-pt-mono;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
