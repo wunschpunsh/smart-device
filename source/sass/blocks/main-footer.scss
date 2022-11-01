@@ -19,9 +19,11 @@
 .main-footer__nav-container {
   display: flex;
   flex-grow: 1;
+  margin-top: 8px;
 
   @include vp-1023 {
     justify-content: space-between;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -35,14 +37,13 @@
   @include vp-1023 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    padding: 35px 55px 25px 50px;
+    padding: 32px 55px 25px 50px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     margin: 0;
   }
@@ -50,14 +51,14 @@
 
 .main-footer__logo-link {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @include vp-1023 {
     margin: 0;
   }
 
   @include vp-767 {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
   }
 
   @include hover {

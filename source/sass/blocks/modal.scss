@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 18px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -11,13 +11,12 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal,
-    transform $trans-modal,
+  transition: opacity $trans-modal, transform $trans-modal,
     visibility $trans-modal;
 
   pointer-events: none;
@@ -27,62 +26,6 @@
 
   &::-webkit-scrollbar {
     display: none;
-  }
-
-  &__wrapper {
-    position: relative;
-
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 60px 40px;
-
-    @include vp-767 {
-      padding: 60px 16px;
-    }
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    cursor: pointer;
-  }
-
-  &__content {
-    position: relative;
-
-    width: 600px;
-    padding: 40px;
-
-    background-color: $color-default-white;
-
-    @include vp-767 {
-      width: 100%;
-      padding: 20px;
-    }
-  }
-
-  &__close-btn {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    z-index: 1;
-
-    width: 40px;
-    height: 40px;
-    padding: 0;
-
-    background: $color-transparent;
-    border: none;
-    cursor: pointer;
   }
 
   &--responsive {
@@ -116,4 +59,109 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 146px 40px;
+
+  @include vp-767 {
+    padding: 60px 16px;
+  }
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+
+  width: 500px;
+  padding: 40px;
+
+  background-color: $color-background-deep-sky-blue;
+  border-radius: 3px;
+  @include vp-767 {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include hover {
+    opacity: 0.7;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 28px;
+    height: 1px;
+    transform: rotate(45deg);
+    background-color: $color-default-white;
+    border-radius: 5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 28px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-color: $color-default-white;
+    border-radius: 5px;
+
+    @include hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.modal__title {
+  width: 95%;
+  margin: 0;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: $color-default-white;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $ff-pt-mono;
+  color: $color-default-white;
 }

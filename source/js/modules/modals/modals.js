@@ -1,6 +1,7 @@
 import {ScrollLock} from '../../utils/scroll-lock';
 import {FocusLock} from '../../utils/focus-lock';
 
+
 export class Modals {
   constructor(settings = {}) {
     this._scrollLock = new ScrollLock();
@@ -168,7 +169,9 @@ export class Modals {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
+      document.querySelector('#modal-user-name').focus();
     }, this._eventTimeout);
+
   }
 
   close(modalName = this._modalName) {

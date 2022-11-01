@@ -3,27 +3,45 @@
 }
 
 .service__container {
-  padding: 70px 0 140px;
+  padding: 63px 0 140px;
 
   @include vp-1023 {
-    padding: 60px 0 75px;
+    padding: 55px 0 75px;
   }
 
   @include vp-767 {
-    padding: 50px 25px 86px;
+    padding: 47px 25px 86px;
   }
 }
 
 .service__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
 
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
+
   &--phone-visible {
     display: none;
+  }
+
+  @include vp-767 {
+    width: 97%;
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 39px;
+
+    &--visible {
+      display: none;
+    }
+    &--phone-visible {
+      display: block;
+    }
   }
 }
 

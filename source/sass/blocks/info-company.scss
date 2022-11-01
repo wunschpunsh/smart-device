@@ -1,21 +1,25 @@
 .info-company__container {
   position: relative;
-  padding: 0 0 20px 245px;
+  padding: 0 0 20px 249px;
   margin-bottom: 100px;
 
   @include vp-1023 {
-    padding: 0 0 0 178px;
+    padding: 0 0 0 175px;
     margin-bottom: 80px;
   }
 
   @include vp-767 {
-    padding: 0 20px;
+    padding: 0 26px;
   }
 
   & p {
     margin: 0;
     margin-bottom: 20px;
     font-family: $ff-pt-mono;
+
+    @include vp-1023 {
+      margin-bottom: 18px;
+    }
 
     @include vp-767 {
       font-size: 14px;
@@ -41,6 +45,10 @@
   font-size: 36px;
   line-height: 51px;
 
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+
   @include vp-767 {
     font-size: 28px;
     line-height: 39px;
@@ -64,6 +72,10 @@
 
   @include vp-1023 {
     margin: 0;
+  }
+
+  @include vp-767 {
+    padding: 8px 39px 8px;
   }
 
   @include hover {

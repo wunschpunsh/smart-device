@@ -12,6 +12,10 @@
   justify-content: space-between;
   margin-bottom: 20px;
 
+  &--modal {
+    display: block;
+  }
+
   @include vp-767 {
     flex-direction: column;
     margin-bottom: 0;
@@ -47,13 +51,17 @@
       color: $color-default-white;
     }
   }
+
+  &--modal input {
+    margin-bottom: 20px;
+  }
 }
 
 .form__text-container {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   & textarea {
@@ -68,6 +76,15 @@
     color: $color-black-pearl;
     border-radius: 3px;
 
+    @include vp-1023 {
+      padding: 34px 15px;
+    }
+
+    @include vp-767 {
+      min-height: 180px;
+      padding: 27px 15px;
+    }
+
     @include hover {
       background-color: rgba(4, 20, 39, 0.3);
     }
@@ -81,19 +98,36 @@
     font-family: $ff-pt-mono;
     color: $color-default-white;
   }
+
+  &--modal {
+    margin-bottom: 25px;
+  }
 }
 
 .form__send-container {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
+
+  @include vp-1023 {
+    align-items: center;
+  }
 
   @include vp-767 {
     flex-direction: column;
   }
+
+  &--modal {
+    display: block;
+    & .form__send-button {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .form__send-button {
-  padding: 11px 68px;
+  padding: 11px 71px;
+  margin-right: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -119,7 +153,13 @@
     opacity: 0.1;
   }
 
+  @include vp-1023 {
+    margin-right: 82px;
+    padding: 13px 71px;
+  }
+
   @include vp-767 {
+    margin: 0;
     margin-bottom: 25px;
   }
 }
@@ -130,6 +170,10 @@
   align-items: center;
   width: 44%;
   cursor: pointer;
+
+  &--modal {
+    width: 100%;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -162,24 +206,24 @@
 .form__send-mark {
   box-sizing: border-box;
   position: relative;
-  flex-basis: 9%;
   align-self: center;
   margin-right: 10px;
-  width: 15px;
+  width: 17px;
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
 
-  @include vp-1023 {
-    flex-basis: 7%;
+  &--modal {
+    margin-left: 10px;
   }
 
   @include vp-767 {
-    flex-basis: 9%;
+    margin-left: 5px;
   }
 }
 
 .form__send-text {
+  width: 100%;
   font-family: $ff-pt-mono;
   font-size: 14px;
   line-height: 16px;

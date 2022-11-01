@@ -1,19 +1,23 @@
-const feedBackForm = document.querySelector('.feedback__form');
+const feedBackForm = document.querySelector('.form');
 const formButton = feedBackForm.querySelector('.form__send-button');
-const phoneInput = feedBackForm.querySelector('#user-phone');
-const nameInput = feedBackForm.querySelector('#user-name');
-const personalInput = feedBackForm.querySelector('#personal-data');
+const phoneInput = feedBackForm.querySelector('input[type="tel"]');
+const nameInput = feedBackForm.querySelector('input[type="text"]');
+const personalInput = feedBackForm.querySelector('input[type="checkbox"]');
+
+const nameInputs = document.querySelectorAll('input[type="text"]');
 
 const MASK_PHONE_FORMAT = '+7(';
 let formattedInputValue;
 
 
 const validatenameInput = () => {
-  nameInput.addEventListener('input', () => {
-    const isValid = nameInput.checkValidity();
-    if (!isValid) {
-      nameInput.title = ('Только буквы русского или латинского алфавита');
-    }
+  nameInputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      const isValid = input.checkValidity();
+      if (!isValid) {
+        input.title = ('Только буквы русского или латинского алфавита');
+      }
+    });
   });
 };
 
@@ -73,4 +77,4 @@ const validateForm = () => {
   phoneInput.addEventListener('keydown', onPhoneInputClearKeydow);
 };
 
-export {feedBackForm, validateForm};
+export {feedBackForm, validateForm, nameInput};

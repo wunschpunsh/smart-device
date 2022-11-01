@@ -8,11 +8,12 @@
   list-style: none;
 
   @include vp-1023 {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   @include vp-767 {
     display: block;
     padding: 0 25px;
+    margin-bottom: 44px;
   }
 }

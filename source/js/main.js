@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {activateFooterAccordion} from './modules/modals/accordion.js';
-import {showMore} from './modules/modals/show-more.js';
-import {submitFeedBackForm} from './modules/modals/form.js';
+import {activateFooterAccordion} from './modules/accordion.js';
+import {showMore} from './modules/show-more.js';
+import {submitFeedBackForm} from './modules/form.js';
 
 
 // ---------------------------------

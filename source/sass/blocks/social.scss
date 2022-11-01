@@ -2,7 +2,13 @@
   display: flex;
   padding: 0;
   margin: 0;
+  margin-left: 10px;
   list-style: none;
+
+  @include vp-1023 {
+    margin: 0;
+    margin-right: -5px;
+  }
 
   @include vp-767 {
     justify-content: center;
