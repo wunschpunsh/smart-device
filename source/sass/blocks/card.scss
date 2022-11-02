@@ -8,7 +8,6 @@
   cursor: pointer;
   background-color: #3d8fcd;
 
-
   @include vp-1023 {
     padding: 40px 45px;
   }
@@ -22,7 +21,7 @@
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../../img/background/card-background-production-large@2x.png");
+        background-image: url("../img/background/card-background-production-large@2x.png");
       }
     }
 
@@ -30,7 +29,7 @@
       background-image: url("../img/background/card-background-production-medium.png");
 
       @include retina {
-        background-image: url("../../img/background/card-background-production-medium@2x.png");
+        background-image: url("../img/background/card-background-production-medium@2x.png");
       }
     }
 
@@ -38,7 +37,7 @@
       background-image: url("../img/background/card-background-production-small.png");
 
       @include retina {
-        background-image: url("../../img/background/card-background-production-small@2x.png");
+        background-image: url("../img/background/card-background-production-small@2x.png");
       }
     }
   }
@@ -131,7 +130,7 @@
     width: 60px;
     height: 60px;
     background-color: $color-deep-sky-blue;
-    background-image: url("../../img/svg/arrow-button-card.svg");
+    background-image: url("../img/svg/arrow-button-card.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 3px 0 0 0;

@@ -24,7 +24,7 @@
 
   @include vp-767 {
     margin-top: -70px;
-    background-image: url("../../img/background/main-background-small.png");
+    background-image: url("../img/background/main-background-small.png");
 
     @include retina {
       background-image: url("../img/background/main-background-small@2x.png");
