@@ -1396,7 +1396,7 @@ button,
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
-  background-image: url("../../img/svg/arrow-button-card.svg");
+  background-image: url("../img/svg/arrow-button-card.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 3px 0 0 0;
@@ -1667,7 +1667,7 @@ button,
   left: 1px;
   width: 10px;
   height: 10px;
-  background-image: url("../../img/svg/arrow-checkbox-form.svg");
+  background-image: url("../img/svg/arrow-checkbox-form.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1823,7 +1823,7 @@ button,
   }
 
   .card--production {
-    background-image: url("../../img/background/card-background-production-large@2x.png");
+    background-image: url("../img/background/card-background-production-large@2x.png");
   }
 
   .card--assembly {
@@ -2092,7 +2092,7 @@ button,
   }
 
   .card--production {
-    background-image: url("../../img/background/card-background-production-medium@2x.png");
+    background-image: url("../img/background/card-background-production-medium@2x.png");
   }
 
   .card--assembly {
@@ -2283,7 +2283,7 @@ button,
 
   .intro {
     margin-top: -70px;
-    background-image: url("../../img/background/main-background-small.png");
+    background-image: url("../img/background/main-background-small.png");
   }
 
   .intro__container {
@@ -2492,7 +2492,7 @@ button,
   }
 
   .card--production {
-    background-image: url("../../img/background/card-background-production-small@2x.png");
+    background-image: url("../img/background/card-background-production-small@2x.png");
   }
 
   .card--assembly {
