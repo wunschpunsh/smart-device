@@ -65,6 +65,7 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  user-select: none;
   color: $color-deep-sky-blue;
   background-color: transparent;
   border: 1px solid $color-deep-sky-blue;

@@ -1,13 +1,17 @@
 .success {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -18,8 +22,8 @@
   justify-content: center;
   align-items: center;
   width: 600px;
-  padding: 50px 20px;
-  padding-top: 150px;
+  padding: 100px 20px;
+  padding-bottom: 75px;
   margin-top: 200px;
   font-family: $ff-roboto;
   text-align: center;
@@ -28,11 +32,6 @@
   color: $color-alica-blue;
   background-color: $color-black-pearl;
   border-radius: 10px;
-}
-
-.success__inner {
-  padding: 100px 20px;
-  padding-bottom: 75px;
 }
 
 .success__title {

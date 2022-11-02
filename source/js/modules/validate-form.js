@@ -78,6 +78,7 @@ const validateForm = () => {
   });
 
   personalInputs.forEach((checkbox) => {
+    checkbox.checked = true;
     checkbox.addEventListener('change', onFormButtonChange);
   });
 };

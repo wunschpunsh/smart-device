@@ -1,5 +1,4 @@
 
-
 const getSuccessMessage = () => {
 
   const successMessage = document.querySelector('.success');
@@ -10,7 +9,7 @@ const getSuccessMessage = () => {
   let onSuccesMessageOutsideClick = null;
 
   const onSuccesMessageKeyDown = (evt) => {
-    if (evt.key === 'Escape') {
+    if (evt.key === 'Escape' || evt.key === 'Enter') {
       evt.preventDefault();
       successMessage.classList.add('visually-hidden');
       document.removeEventListener('keydown', onSuccesMessageKeyDown);

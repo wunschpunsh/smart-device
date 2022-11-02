@@ -74,7 +74,7 @@
   color: $color-alica-blue;
 
   @include vp-1023 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 64px;
     line-height: 75px;
   }
@@ -114,9 +114,11 @@
   background-color: $color-deep-sky-blue;
   border-radius: 3px;
   user-select: none;
+  vertical-align: baseline;
 
   @include hover {
     background-color: $color-alica-blue;
+
     & .intro__button-text {
       color: $color-deep-sky-blue;
     }

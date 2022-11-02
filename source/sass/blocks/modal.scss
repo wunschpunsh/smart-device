@@ -16,8 +16,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal, transform $trans-modal,
-    visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
 
   pointer-events: none;
 
@@ -96,6 +95,7 @@
 
   background-color: $color-background-deep-sky-blue;
   border-radius: 3px;
+
   @include vp-767 {
     width: 100%;
     padding: 20px;

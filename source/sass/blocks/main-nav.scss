@@ -98,6 +98,7 @@
 
   @include hover {
     color: $color-background-deep-sky-blue;
+
     & .main-nav__icon {
       fill: $color-alica-blue;
     }
@@ -143,7 +144,9 @@
   color: $color-alica-blue;
 
   @include hover {
-    color: $color-background-deep-sky-blue;
+    .main-nav__button-link {
+      color: $color-background-deep-sky-blue;
+    }
     border: 1px solid $color-background-deep-sky-blue;
   }
 
@@ -158,4 +161,8 @@
   @include vp-1023 {
     display: none;
   }
+}
+
+.main-nav__button-link {
+  color: $color-alica-blue;
 }

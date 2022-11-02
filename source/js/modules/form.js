@@ -21,8 +21,8 @@ const sendFormData = (data) => {
   }).then((response) => {
     if (response.ok) {
       clearLocalStorage();
-      getSuccessMessage();
       hiddenModal();
+      getSuccessMessage();
     }
   });
 };

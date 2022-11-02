@@ -69,12 +69,14 @@
               </li>
             </ul>
             <button class="main-nav__button" data-open-modal="feedback">
-              Заказать звонок
+              <a class="main-nav__button-link nojs" href="./popup.html"
+                >Заказать звонок</a
+              >
             </button>
           </nav>
         </div>
       </header>
-      <main class="main-content">
+      <main>
         <section class="intro">
           <div class="container">
             <div class="intro__container">
@@ -362,7 +364,10 @@
               <!--
                  На этот блок вешается класс открытия  аккордеона и класс nojs при отключенном JavaScript
                 -->
-              <div class="footer-navigation__container" data-accordion-item>
+              <div
+                class="footer-navigation__container nojs"
+                data-accordion-item
+              >
                 <h3 class="footer-navigation__title" data-accordion-button>
                   Разделы сайта
                 </h3>
@@ -401,7 +406,7 @@
                 </div>
               </div>
               <!-- На этот блок вешается класс открытия аккордеона и класс nojs при отключенном JavaScript-->
-              <div class="contacts__container" data-accordion-item>
+              <div class="contacts__container nojs" data-accordion-item>
                 <h3 class="contacts__title" data-accordion-button>Наш офис</h3>
                 <div class="contacts__wrapper">
                   <span class="contacts__address"
@@ -527,14 +532,14 @@
           </div>
         </div>
       </div>
-
       <!-- Сообщение об успешной отправке формы -->
-      <section class="success visually-hidden">
+      <div class="success success--preload success--no-scale visually-hidden">
+        <div class="success__overlay" data-close-modal></div>
         <div class="success__inner">
           <h2 class="success__title">В ближайшее время мы с Вами свяжемся</h2>
           <button type="button" class="success__button">Круто!</button>
         </div>
-      </section>
+      </div>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

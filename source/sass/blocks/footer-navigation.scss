@@ -8,7 +8,6 @@
   }
 
   @include vp-767 {
-    // padding: 20px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
@@ -26,7 +25,7 @@
 
   @include vp-767 {
     margin-bottom: 0;
-    padding: 21px 25px;
+    padding: 21px 50px 21px 25px;
     cursor: pointer;
 
     &::after {
@@ -63,7 +62,6 @@
 
   @include vp-767 {
     display: none;
-    // margin-top: 15px;
     padding: 0 25px;
   }
 }
@@ -92,6 +90,7 @@
 
 .footer-navigation__link {
   display: inline-block;
+  vertical-align: baseline;
   font-family: $ff-pt-mono;
   color: $color-transparent;
 

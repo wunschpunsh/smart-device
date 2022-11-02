@@ -1,12 +1,11 @@
 .contacts__container {
-  flex-basis: 41%;
+  flex-basis: 40%;
 
   @include vp-1023 {
     flex-basis: 48%;
   }
 
   @include vp-767 {
-    // padding: 20px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
@@ -23,7 +22,7 @@
   color: $color-default-white;
 
   @include vp-767 {
-    padding: 21px 25px;
+    padding: 21px 50px 21px 25px;
     margin-bottom: 0;
     cursor: pointer;
 

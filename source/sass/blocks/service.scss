@@ -39,6 +39,7 @@
     &--visible {
       display: none;
     }
+
     &--phone-visible {
       display: block;
     }
@@ -48,7 +49,7 @@
 .service__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 85px;
+  gap: 85px;
   margin: 0;
   padding: 0;
   list-style: none;
