@@ -48,7 +48,6 @@
     font-family: $ff-pt-mono;
 
     @include vp-767 {
-      padding-bottom: 39px;
       font-size: 14px;
       line-height: 19px;
     }
@@ -83,9 +82,7 @@
   }
 
   @include vp-767 {
-    max-height: 340px;
-
-    min-height: 325px;
+    min-height: 340px;
     padding: 30px 30px 35px;
 
     &:not(:last-child) {

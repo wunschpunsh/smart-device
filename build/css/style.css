@@ -2317,14 +2317,12 @@ button,
   }
 
   .advantage p {
-    padding-bottom: 39px;
     font-size: 14px;
     line-height: 19px;
   }
 
   .advantage {
-    max-height: 340px;
-    min-height: 325px;
+    min-height: 340px;
     padding: 30px 30px 35px;
   }
 
@@ -2335,7 +2333,7 @@ button,
   .advantages__list {
     display: block;
     padding: 0 25px;
-    margin-bottom: 38px;
+    margin-bottom: 17px;
   }
 
   .info-company__container {
