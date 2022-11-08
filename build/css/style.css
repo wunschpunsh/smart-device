@@ -1138,7 +1138,7 @@ button,
   margin-bottom: 120px;
 }
 
-.intro__title {
+.intro__container h1 {
   margin: 0;
   margin-bottom: 32px;
   font-weight: 700;
@@ -1149,7 +1149,7 @@ button,
   color: #f2f5f7;
 }
 
-.intro__description {
+.intro__container p {
   width: 65%;
   margin: 0;
   margin-bottom: 45px;
@@ -1249,6 +1249,14 @@ button,
   margin-bottom: 100px;
 }
 
+.info-company__container h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
 .info-company__container p {
   margin: 0;
   margin-bottom: 20px;
@@ -1259,14 +1267,6 @@ button,
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.info-company__title {
-  margin: 0;
-  margin-bottom: 15px;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
 }
 
 .info-company__button {
@@ -1432,7 +1432,7 @@ button,
   background-size: contain;
 }
 
-.feedback__title {
+.feedback__container h2 {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 400;
@@ -1441,7 +1441,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__description {
+.feedback__container p {
   margin: 0;
   margin-bottom: 32px;
   font-family: "PT Mono", "Arial", monospace;
@@ -1942,13 +1942,13 @@ button,
     margin-bottom: 80px;
   }
 
-  .intro__title {
+  .intro__container h1 {
     margin-bottom: 0;
     font-size: 64px;
     line-height: 75px;
   }
 
-  .intro__description {
+  .intro__container p {
     width: 91%;
     margin-bottom: 57px;
   }
@@ -1979,12 +1979,12 @@ button,
     margin-bottom: 80px;
   }
 
-  .info-company__container p {
-    margin-bottom: 18px;
+  .info-company__container h2 {
+    margin-bottom: 10px;
   }
 
-  .info-company__title {
-    margin-bottom: 10px;
+  .info-company__container p {
+    margin-bottom: 18px;
   }
 
   .info-company__button {
@@ -2044,11 +2044,11 @@ button,
     display: none;
   }
 
-  .feedback__title {
+  .feedback__container h2 {
     margin-bottom: 5px;
   }
 
-  .feedback__description {
+  .feedback__container p {
     margin-bottom: 25px;
   }
 
@@ -2273,13 +2273,13 @@ button,
     margin-bottom: 50px;
   }
 
-  .intro__title {
+  .intro__container h1 {
     margin-bottom: 8px;
     font-size: 36px;
     line-height: 42px;
   }
 
-  .intro__description {
+  .intro__container p {
     width: 100%;
     margin-bottom: 44px;
     font-size: 14px;
@@ -2340,6 +2340,11 @@ button,
     padding: 0 26px;
   }
 
+  .info-company__container h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
   .info-company__container p {
     font-size: 14px;
     line-height: 19px;
@@ -2347,11 +2352,6 @@ button,
 
   .info-company__container img {
     display: none;
-  }
-
-  .info-company__title {
-    font-size: 28px;
-    line-height: 39px;
   }
 
   .info-company__button {
@@ -2407,12 +2407,12 @@ button,
     padding: 49px 25px 90px;
   }
 
-  .feedback__title {
+  .feedback__container h2 {
     font-size: 30px;
     line-height: 42px;
   }
 
-  .feedback__description {
+  .feedback__container p {
     margin-bottom: 35px;
     font-size: 14px;
     line-height: 19px;
