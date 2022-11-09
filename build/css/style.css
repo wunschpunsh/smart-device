@@ -1586,13 +1586,26 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
 .form__send-container--modal {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .form__send-container--modal .form__send-button {
@@ -1601,8 +1614,7 @@ button,
 }
 
 .form__send-button {
-  padding: 11px 71px;
-  margin-right: 50px;
+  padding: 11px 70px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -1637,7 +1649,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 38%;
+  width: 45%;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1834,6 +1846,7 @@ button,
 
 @media (max-width: 1023px) {
   .container {
+    max-width: 980px;
     padding: 0 50px;
   }
 
@@ -2082,8 +2095,11 @@ button,
   }
 
   .form__send-button {
-    margin-right: 82px;
-    padding: 13px 71px;
+    padding: 13px 70px;
+  }
+
+  .form__send-text-field {
+    width: 47%;
   }
 }
 
@@ -2151,8 +2167,9 @@ button,
   }
 
   .contacts__container h3 {
+    max-width: 620px;
     padding: 21px 50px 21px 25px;
-    margin-bottom: 0;
+    margin: 0 auto;
     cursor: pointer;
   }
 
@@ -2180,8 +2197,10 @@ button,
   }
 
   .contacts__wrapper {
+    max-width: 620px;
     display: none;
     padding: 0 24px;
+    margin: 0 auto;
   }
 
   .contacts__address {
@@ -2201,7 +2220,8 @@ button,
   }
 
   .footer-navigation__container h3 {
-    margin-bottom: 0;
+    max-width: 620px;
+    margin: 0 auto;
     padding: 21px 50px 21px 25px;
     cursor: pointer;
   }
@@ -2230,6 +2250,8 @@ button,
   }
 
   .footer-navigation__list-container {
+    max-width: 620px;
+    margin: 0 auto;
     display: none;
     padding: 0 25px;
   }
@@ -2255,13 +2277,13 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 32px 55px 30px 50px;
+    padding: 32px 55px 26px 50px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     margin: 0;
   }
 
   .main-footer__logo-link {
-    margin-bottom: 9px;
+    margin-bottom: 17px;
   }
 
   .social__list {
@@ -2293,6 +2315,8 @@ button,
   }
 
   .intro__container {
+    max-width: 620px;
+    margin: 0 auto;
     padding: 146px 24px 190px;
     margin-bottom: 50px;
   }
@@ -2311,6 +2335,7 @@ button,
   }
 
   .intro__button {
+    width: 100%;
     padding: 12px 38px;
     margin: 0 auto;
   }
@@ -2355,12 +2380,17 @@ button,
   }
 
   .advantages__list {
+    max-width: 620px;
     display: block;
     padding: 0 25px;
+    margin: 0 auto;
     margin-bottom: 17px;
   }
 
   .info-company__container {
+    max-width: 620px;
+    margin: 0 auto;
+    margin-bottom: 80px;
     padding: 0 26px;
   }
 
@@ -2383,6 +2413,8 @@ button,
   }
 
   .service__container {
+    max-width: 620px;
+    margin: 0 auto;
     padding: 47px 25px 86px;
   }
 
@@ -2431,6 +2463,8 @@ button,
   }
 
   .feedback__container {
+    max-width: 620px;
+    margin: 0 auto;
     padding: 49px 25px 90px;
   }
 
@@ -2468,14 +2502,15 @@ button,
 
   .form__send-container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .form__send-button {
+    width: 100%;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .form__send-text-field {

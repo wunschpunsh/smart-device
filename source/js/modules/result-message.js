@@ -23,7 +23,6 @@ const getSuccessMessage = () => {
       document.removeEventListener('keydown', onSuccesMessageKeyDown);
       document.removeEventListener('click', onSuccesMessageOutsideClick);
     }
-
   };
 
   onSuccesMessageOutsideClick = (evt) => {

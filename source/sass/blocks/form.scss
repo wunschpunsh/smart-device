@@ -109,6 +109,8 @@
 
 .form__send-container {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: flex-end;
 
   @include vp-1023 {
@@ -116,11 +118,12 @@
   }
 
   @include vp-767 {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   &--modal {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
 
     & .form__send-button {
       width: 100%;
@@ -130,8 +133,7 @@
 }
 
 .form__send-button {
-  padding: 11px 71px;
-  margin-right: 50px;
+  padding: 11px 70px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -159,13 +161,13 @@
   }
 
   @include vp-1023 {
-    margin-right: 82px;
-    padding: 13px 71px;
+    padding: 13px 70px;
   }
 
   @include vp-767 {
+    width: 100%;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 }
 
@@ -173,9 +175,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 38%;
+  width: 45%;
   cursor: pointer;
   user-select: none;
+
+  @include vp-1023 {
+    width: 47%;
+  }
 
   &--modal {
     width: 100%;

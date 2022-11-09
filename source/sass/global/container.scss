@@ -5,6 +5,7 @@
   padding: 0 32px;
 
   @include vp-1023 {
+    max-width: 980px;
     padding: 0 50px;
   }
 
