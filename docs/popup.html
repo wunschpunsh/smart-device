@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта" />
+  <title>ProjectName</title>
+  <link rel="preload" href="./fonts/robotocondensed-regular.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous" />
+  <link rel="preload" href="./fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="./fonts/ptmono-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <header class="main-header nojs">
+    <div class="container">
+      <nav class="main-header__nav main-nav">
+        <a class="main-nav__logo-link">
+          <svg class="main-nav__logo main-nav__logo--visible" width="215" height="55">
+            <use xlink:href="img/sprite_auto.svg#main-logo"></use>
+          </svg>
+          <svg class="main-nav__logo main-nav__logo--phone-visible" width="35" height="35">
+            <use xlink:href="img/sprite_auto.svg#logo-small"></use>
+          </svg>
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="mailto:info@sd.ru" class="main-nav__link">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+              </svg>
+              <span class="main-nav__text">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="tel:+74950005252" class="main-nav__link">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <span class="main-nav__text">+7 (495) 000 52 52</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="modal nojs">
+      <div class="modal__content nojs">
+        <h1>Закажите звонок</h1>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="https://echo.htmlacademy.ru/" class="modal__form form" method="POST" data-id="modal">
+          <div class="form__input-container form__input-container--modal">
+            <div class="form__input form__input--modal form__item">
+              <label class="visually-hidden" for="user-name">Ваше имя</label>
+              <input type="text" id="user-name" name="user-name" placeholder="Имя" pattern="^(?!\s)[a-zA-Zа-яА-ЯёЁ\s]*$"
+                required />
+            </div>
+            <div class="form__input form__item">
+              <label class="visually-hidden" for="user-phone">Ваш номер телефона</label>
+              <input type="tel" id="user-phone" name="user-phone" minlength="14" maxlength="18" pattern=".{0}|.{14,}"
+                placeholder="Телефон" required />
+            </div>
+          </div>
+
+          <div class="form__text-container form__text-container--modal">
+            <label class="visually-hidden" for="text-question">Ваш вопрос?</label>
+            <textarea name="text-question" id="text-question" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="form__send-container form__send-container--modal">
+            <button class="form__send-button" type="submit" data-id-checkbox="modal-personal-data">
+              Отправить
+            </button>
+            <h2 class="visually-hidden">Согласие на обработку персональных данных</h2>
+            <label class="form__send-text-field form__send-text-field--modal form__item">
+              <input class="visually-hidden" type="checkbox" id="modal-personal-data" name="personal-data" checked
+                title="Подтвердите согласие на обработку персональных данных" required />
+              <span class="form__send-mark form__send-mark--modal"></span>
+              <span class="form__send-text">Я согласен на обработку персональных данных</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
