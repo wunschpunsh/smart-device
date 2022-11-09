@@ -142,22 +142,24 @@
   }
 }
 
-.card__title {
-  z-index: 5;
-  position: relative;
-  width: 65%;
-  margin: 0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: $color-default-white;
+.card__link {
+  & h3 {
+    z-index: 5;
+    position: relative;
+    width: 65%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-default-white;
 
-  @include vp-1023 {
-    width: 22%;
-  }
+    @include vp-1023 {
+      width: 22%;
+    }
 
-  @include vp-767 {
-    width: 60%;
-    font-size: 18px;
+    @include vp-767 {
+      width: 60%;
+      font-size: 18px;
+    }
   }
 }

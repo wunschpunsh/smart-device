@@ -16,7 +16,8 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal,
+    visibility $trans-modal;
 
   pointer-events: none;
 
@@ -57,6 +58,24 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+
+  & h2,
+  & h1 {
+    width: 95%;
+    margin: 0;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    color: $color-default-white;
+  }
+
+  & p {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: $ff-pt-mono;
+    color: $color-default-white;
   }
 }
 
@@ -147,21 +166,4 @@
       opacity: 0.8;
     }
   }
-}
-
-.modal__title {
-  width: 95%;
-  margin: 0;
-  font-family: $ff-roboto;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 42px;
-  color: $color-default-white;
-}
-
-.modal__description {
-  margin: 0;
-  margin-bottom: 40px;
-  font-family: $ff-pt-mono;
-  color: $color-default-white;
 }

@@ -13,6 +13,13 @@
   -webkit-overflow-scrolling: touch;
 
   background-color: rgba(0, 0, 0, 0.8);
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 50px;
+    line-height: 1;
+    font-size: 32px;
+  }
 }
 
 .success__inner {
@@ -32,13 +39,6 @@
   color: $color-alica-blue;
   background-color: $color-black-pearl;
   border-radius: 10px;
-}
-
-.success__title {
-  margin: 0;
-  margin-bottom: 50px;
-  line-height: 1;
-  font-size: 32px;
 }
 
 .success__button {

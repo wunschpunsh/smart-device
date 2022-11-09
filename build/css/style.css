@@ -713,6 +713,24 @@ button,
   pointer-events: auto;
 }
 
+.modal h2,
+.modal h1 {
+  width: 95%;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.modal p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "PT Mono", "Arial", monospace;
+  color: #ffffff;
+}
+
 .modal__wrapper {
   position: relative;
   display: -webkit-box;
@@ -787,23 +805,6 @@ button,
   transform: rotate(-45deg);
   background-color: #ffffff;
   border-radius: 5px;
-}
-
-.modal__title {
-  width: 95%;
-  margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 42px;
-  color: #ffffff;
-}
-
-.modal__description {
-  margin: 0;
-  margin-bottom: 40px;
-  font-family: "PT Mono", "Arial", monospace;
-  color: #ffffff;
 }
 
 .main-header {
@@ -935,7 +936,7 @@ button,
   flex-basis: 40%;
 }
 
-.contacts__title {
+.contacts__container h3 {
   position: relative;
   margin: 0;
   margin-bottom: 20px;
@@ -985,7 +986,7 @@ button,
   margin-right: 30px;
 }
 
-.footer-navigation__title {
+.footer-navigation__container h3 {
   position: relative;
   margin: 0;
   margin-bottom: 20px;
@@ -1306,7 +1307,7 @@ button,
   padding: 63px 0 140px;
 }
 
-.service__title {
+.service__title-wrapper h2 {
   margin: 0;
   margin-bottom: 52px;
   font-weight: 400;
@@ -1315,7 +1316,7 @@ button,
   color: #ffffff;
 }
 
-.service__title--phone-visible {
+.service__title-wrapper h2:last-child {
   display: none;
 }
 
@@ -1384,7 +1385,7 @@ button,
   border-radius: 3px 0 0 0;
 }
 
-.card__title {
+.card__link h3 {
   z-index: 5;
   position: relative;
   width: 65%;
@@ -1704,6 +1705,13 @@ button,
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.success h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 1;
+  font-size: 32px;
+}
+
 .success__inner {
   position: relative;
   display: -webkit-box;
@@ -1730,13 +1738,6 @@ button,
   color: #f2f5f7;
   background-color: #041827;
   border-radius: 10px;
-}
-
-.success__title {
-  margin: 0;
-  margin-bottom: 50px;
-  line-height: 1;
-  font-size: 32px;
 }
 
 .success__button {
@@ -1995,7 +1996,7 @@ button,
     padding: 55px 0 75px;
   }
 
-  .service__title {
+  .service__title-wrapper h2 {
     margin-bottom: 38px;
   }
 
@@ -2027,7 +2028,7 @@ button,
     margin-bottom: 30px;
   }
 
-  .card__title {
+  .card__link h3 {
     width: 22%;
   }
 
@@ -2127,13 +2128,13 @@ button,
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .contacts__title {
+  .contacts__container h3 {
     padding: 21px 50px 21px 25px;
     margin-bottom: 0;
     cursor: pointer;
   }
 
-  .contacts__title::after {
+  .contacts__container h3::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -2143,7 +2144,7 @@ button,
     background-color: #c4c4c4;
   }
 
-  .contacts__title::before {
+  .contacts__container h3::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -2177,13 +2178,13 @@ button,
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .footer-navigation__title {
+  .footer-navigation__container h3 {
     margin-bottom: 0;
     padding: 21px 50px 21px 25px;
     cursor: pointer;
   }
 
-  .footer-navigation__title::after {
+  .footer-navigation__container h3::after {
     content: "";
     position: absolute;
     top: 45%;
@@ -2193,7 +2194,7 @@ button,
     background-color: #c4c4c4;
   }
 
-  .footer-navigation__title::before {
+  .footer-navigation__container h3::before {
     content: "";
     position: absolute;
     top: 45%;
@@ -2362,18 +2363,18 @@ button,
     padding: 47px 25px 86px;
   }
 
-  .service__title {
+  .service__title-wrapper h2 {
     width: 97%;
     margin-bottom: 28px;
     font-size: 28px;
     line-height: 39px;
   }
 
-  .service__title--visible {
+  .service__title-wrapper h2:first-child {
     display: none;
   }
 
-  .service__title--phone-visible {
+  .service__title-wrapper h2:last-child {
     display: block;
   }
 
@@ -2398,7 +2399,7 @@ button,
     height: 40px;
   }
 
-  .card__title {
+  .card__link h3 {
     width: 60%;
     font-size: 18px;
   }
