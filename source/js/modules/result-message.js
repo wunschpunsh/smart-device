@@ -4,14 +4,22 @@ const getSuccessMessage = () => {
   const successMessage = document.querySelector('.success');
 
   successMessage.classList.remove('visually-hidden');
+  document.body.classList.add('scroll-lock');
   const successButton = successMessage.querySelector('.success__button');
+
+  const hiddenSuccessMessage = () => {
+    successMessage.classList.add('visually-hidden');
+    document.body.classList.remove('scroll-lock');
+    document.body.style.padding = '0';
+    document.body.style.top = '0';
+  };
 
   let onSuccesMessageOutsideClick = null;
 
   const onSuccesMessageKeyDown = (evt) => {
     if (evt.key === 'Escape' || evt.key === 'Enter') {
       evt.preventDefault();
-      successMessage.classList.add('visually-hidden');
+      hiddenSuccessMessage();
       document.removeEventListener('keydown', onSuccesMessageKeyDown);
       document.removeEventListener('click', onSuccesMessageOutsideClick);
     }
@@ -21,7 +29,7 @@ const getSuccessMessage = () => {
   onSuccesMessageOutsideClick = (evt) => {
 
     if (successMessage === evt.target) {
-      successMessage.classList.add('visually-hidden');
+      hiddenSuccessMessage();
       document.removeEventListener('click', onSuccesMessageOutsideClick);
       document.removeEventListener('keydown', onSuccesMessageKeyDown);
     }
@@ -29,7 +37,7 @@ const getSuccessMessage = () => {
   };
 
   const onSuccessButtonClick = () => {
-    successMessage.classList.add('visually-hidden');
+    hiddenSuccessMessage();
     successButton.removeEventListener('click', onSuccessButtonClick);
     document.removeEventListener('click', onSuccesMessageOutsideClick);
     document.removeEventListener('keydown', onSuccesMessageKeyDown);

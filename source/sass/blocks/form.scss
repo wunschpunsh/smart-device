@@ -173,7 +173,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 44%;
+  width: 38%;
   cursor: pointer;
   user-select: none;
 
@@ -207,6 +207,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+
+  & input:focus + .form__send-mark {
+    outline: 1px solid $color-default-black;
   }
 }
 

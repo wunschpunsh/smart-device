@@ -646,6 +646,7 @@ button,
   -ms-transform: none;
   transform: none;
   background-color: transparent;
+  pointer-events: auto;
 }
 
 .modal {
@@ -873,14 +874,14 @@ button,
   color: #f2f5f7;
 }
 
+.main-nav__text {
+  vertical-align: top;
+}
+
 .main-nav__link {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: inline-block;
+  vertical-align: baseline;
   font-family: "PT Mono", "Arial", monospace;
   line-height: 18px;
   white-space: nowrap;
@@ -898,8 +899,8 @@ button,
 }
 
 .main-nav__icon {
-  display: block;
-  margin-right: 15px;
+  display: inline-block;
+  margin-right: 7px;
   fill: #00b3ff;
 }
 
@@ -981,8 +982,8 @@ button,
 }
 
 .footer-navigation__container {
-  -ms-flex-preferred-size: 56%;
-  flex-basis: 56%;
+  -ms-flex-preferred-size: 55%;
+  flex-basis: 55%;
   margin-right: 30px;
 }
 
@@ -1113,7 +1114,8 @@ button,
 .intro {
   position: relative;
   z-index: 1;
-  background-image: url("../img/background/main-background-large.png");
+  background-image: -webkit-image-set(url("../img/background/main-background-large.webp") 1x, url("../img/background/main-background-large.png") 1x);
+  background-image: image-set(url("../img/background/main-background-large.webp") 1x, url("../img/background/main-background-large.png") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1343,15 +1345,18 @@ button,
 }
 
 .card--production {
-  background-image: url("../img/background/card-background-production-large.png");
+  background-image: -webkit-image-set(url("../img/background/card-background-production-large.webp") 1x, url("../img/background/card-background-production-large.png") 1x);
+  background-image: image-set(url("../img/background/card-background-production-large.webp") 1x, url("../img/background/card-background-production-large.png") 1x);
 }
 
 .card--assembly {
-  background-image: url("../img/background/card-background-assembly-large.png");
+  background-image: -webkit-image-set(url("../img/background/card-background-assembly-large.webp") 1x, url("../img/background/card-background-assembly-large.png") 1x);
+  background-image: image-set(url("../img/background/card-background-assembly-large.webp") 1x, url("../img/background/card-background-assembly-large.png") 1x);
 }
 
 .card--accessories {
-  background-image: url("../img/background/card-background-accessories-large.png");
+  background-image: -webkit-image-set(url("../img/background/card-background-accessories-large.webp") 1x, url("../img/background/card-background-accessories-large.png") 1x);
+  background-image: image-set(url("../img/background/card-background-accessories-large.webp") 1x, url("../img/background/card-background-accessories-large.png") 1x);
 }
 
 .card.focus-visible:active,
@@ -1428,7 +1433,8 @@ button,
   left: -100%;
   width: 100%;
   height: 285px;
-  background-image: url("../img/paper-airplane.png");
+  background-image: -webkit-image-set(url("../img/paper-airplane.webp") 1x, url("../img/paper-airplane.png") 1x);
+  background-image: image-set(url("../img/paper-airplane.webp") 1x, url("../img/paper-airplane.png") 1x);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1631,7 +1637,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 44%;
+  width: 38%;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1654,6 +1660,10 @@ button,
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.form__send-text-field input:focus + .form__send-mark {
+  outline: 1px solid #000000;
 }
 
 .form__send-mark {
@@ -1802,19 +1812,23 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .intro {
-    background-image: url("../img/background/main-background-large@2x.png");
+    background-image: -webkit-image-set(url("../img/background/main-background-large@2x.webp") 2x, url("../img/background/main-background-large@2x.png") 2x);
+    background-image: image-set(url("../img/background/main-background-large@2x.webp") 2x, url("../img/background/main-background-large@2x.png") 2x);
   }
 
   .card--production {
-    background-image: url("../img/background/card-background-production-large@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-production-large@2x.webp") 2x, url("../img/background/card-background-production-large@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-production-large@2x.webp") 2x, url("../img/background/card-background-production-large@2x.png") 2x);
   }
 
   .card--assembly {
-    background-image: url("../img/background/card-background-assembly-large@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-assembly-large@2x.webp") 2x, url("../img/background/card-background-assembly-large@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-assembly-large@2x.webp") 2x, url("../img/background/card-background-assembly-large@2x.png") 2x);
   }
 
   .card--accessories {
-    background-image: url("../img/background/card-background-accessories-large@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-accessories-large@2x.webp") 2x, url("../img/background/card-background-accessories-large@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-accessories-large@2x.webp") 2x, url("../img/background/card-background-accessories-large@2x.png") 2x);
   }
 }
 
@@ -1935,7 +1949,8 @@ button,
 
   .intro {
     margin-top: -100px;
-    background-image: url("../img/background/main-background-medium.png");
+    background-image: -webkit-image-set(url("../img/background/main-background-medium.webp") 1x, url("../img/background/main-background-medium.png") 1x);
+    background-image: image-set(url("../img/background/main-background-medium.webp") 1x, url("../img/background/main-background-medium.png") 1x);
   }
 
   .intro__container {
@@ -2009,15 +2024,18 @@ button,
   }
 
   .card--production {
-    background-image: url("../img/background/card-background-production-medium.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-production-medium.webp") 1x, url("../img/background/card-background-production-medium.png") 1x);
+    background-image: image-set(url("../img/background/card-background-production-medium.webp") 1x, url("../img/background/card-background-production-medium.png") 1x);
   }
 
   .card--assembly {
-    background-image: url("../img/background/card-background-assembly-medium.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-assembly-medium.webp") 1x, url("../img/background/card-background-assembly-medium.png") 1x);
+    background-image: image-set(url("../img/background/card-background-assembly-medium.webp") 1x, url("../img/background/card-background-assembly-medium.png") 1x);
   }
 
   .card--accessories {
-    background-image: url("../img/background/card-background-accessories-medium.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-accessories-medium.webp") 1x, url("../img/background/card-background-accessories-medium.png") 1x);
+    background-image: image-set(url("../img/background/card-background-accessories-medium.webp") 1x, url("../img/background/card-background-accessories-medium.png") 1x);
   }
 
   .card {
@@ -2071,19 +2089,23 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .intro {
-    background-image: url("../img/background/main-background-medium@2x.png");
+    background-image: -webkit-image-set(url("../img/background/main-background-medium@2x.webp") 2x, url("../img/background/main-background-medium@2x.png") 2x);
+    background-image: image-set(url("../img/background/main-background-medium@2x.webp") 2x, url("../img/background/main-background-medium@2x.png") 2x);
   }
 
   .card--production {
-    background-image: url("../img/background/card-background-production-medium@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-production-medium@2x.webp") 2x, url("../img/background/card-background-production-medium@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-production-medium@2x.webp") 2x, url("../img/background/card-background-production-medium@2x.png") 2x);
   }
 
   .card--assembly {
-    background-image: url("../img/background/card-background-assembly-medium@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-assembly-medium@2x.webp") 2x, url("../img/background/card-background-assembly-medium@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-assembly-medium@2x.webp") 2x, url("../img/background/card-background-assembly-medium@2x.png") 2x);
   }
 
   .card--accessories {
-    background-image: url("../img/background/card-background-accessories-medium@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-accessories-medium@2x.webp") 2x, url("../img/background/card-background-accessories-medium@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-accessories-medium@2x.webp") 2x, url("../img/background/card-background-accessories-medium@2x.png") 2x);
   }
 }
 
@@ -2266,7 +2288,8 @@ button,
 
   .intro {
     margin-top: -70px;
-    background-image: url("../img/background/main-background-small.png");
+    background-image: -webkit-image-set(url("../img/background/main-background-small.webp") 1x, url("../img/background/main-background-small.png") 1x);
+    background-image: image-set(url("../img/background/main-background-small.webp") 1x, url("../img/background/main-background-small.png") 1x);
   }
 
   .intro__container {
@@ -2383,15 +2406,18 @@ button,
   }
 
   .card--production {
-    background-image: url("../img/background/card-background-production-small.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-production-small.webp") 1x, url("../img/background/card-background-production-small.png") 1x);
+    background-image: image-set(url("../img/background/card-background-production-small.webp") 1x, url("../img/background/card-background-production-small.png") 1x);
   }
 
   .card--assembly {
-    background-image: url("../img/background/card-background-assembly-small.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-assembly-small.webp") 1x, url("../img/background/card-background-assembly-small.png") 1x);
+    background-image: image-set(url("../img/background/card-background-assembly-small.webp") 1x, url("../img/background/card-background-assembly-small.png") 1x);
   }
 
   .card--accessories {
-    background-image: url("../img/background/card-background-accessories-small.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-accessories-small.webp") 1x, url("../img/background/card-background-accessories-small.png") 1x);
+    background-image: image-set(url("../img/background/card-background-accessories-small.webp") 1x, url("../img/background/card-background-accessories-small.png") 1x);
   }
 
   .card::before {
@@ -2463,19 +2489,23 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .intro {
-    background-image: url("../img/background/main-background-small@2x.png");
+    background-image: -webkit-image-set(url("../img/background/main-background-small@2x.webp") 2x, url("../img/background/main-background-small@2x.png") 2x);
+    background-image: image-set(url("../img/background/main-background-small@2x.webp") 2x, url("../img/background/main-background-small@2x.png") 2x);
   }
 
   .card--production {
-    background-image: url("../img/background/card-background-production-small@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-production-small@2x.webp") 2x, url("../img/background/card-background-production-small@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-production-small@2x.webp") 2x, url("../img/background/card-background-production-small@2x.png") 2x);
   }
 
   .card--assembly {
-    background-image: url("../img/background/card-background-assembly-small@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-assembly-small@2x.webp") 2x, url("../img/background/card-background-assembly-small@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-assembly-small@2x.webp") 2x, url("../img/background/card-background-assembly-small@2x.png") 2x);
   }
 
   .card--accessories {
-    background-image: url("../img/background/card-background-accessories-small@2x.png");
+    background-image: -webkit-image-set(url("../img/background/card-background-accessories-small@2x.webp") 2x, url("../img/background/card-background-accessories-small@2x.png") 2x);
+    background-image: image-set(url("../img/background/card-background-accessories-small@2x.webp") 2x, url("../img/background/card-background-accessories-small@2x.png") 2x);
   }
 }
 
@@ -2582,6 +2612,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .feedback__container::after {
-    background-image: url("../img/paper-airplane@2x.png");
+    background-image: -webkit-image-set(url("../img/paper-airplane@2x.webp") 2x, url("../img/paper-airplane@2x.png") 2x);
+    background-image: image-set(url("../img/paper-airplane@2x.webp") 2x, url("../img/paper-airplane@2x.png") 2x);
   }
 }

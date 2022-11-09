@@ -82,6 +82,8 @@
 }
 
 .main-nav__text {
+  vertical-align: top;
+
   @include vp-1023 {
     display: none;
   }
@@ -89,8 +91,10 @@
 
 .main-nav__link {
   position: relative;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  display: inline-block;
+  vertical-align: baseline;
   font-family: $ff-pt-mono;
   line-height: 18px;
   white-space: nowrap;
@@ -119,8 +123,9 @@
 }
 
 .main-nav__icon {
-  display: block;
-  margin-right: 15px;
+  // display: block;
+  display: inline-block;
+  margin-right: 7px;
   fill: $color-background-deep-sky-blue;
 
   @include vp-1023 {

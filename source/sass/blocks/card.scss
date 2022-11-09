@@ -17,79 +17,133 @@
   }
 
   &--production {
-    background-image: url("../img/background/card-background-production-large.png");
+    background-image: image-set(
+      url("../img/background/card-background-production-large.webp") 1x,
+      url("../img/background/card-background-production-large.png") 1x
+    );
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../img/background/card-background-production-large@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-production-large@2x.webp") 2x,
+          url("../img/background/card-background-production-large@2x.png") 2x
+        );
       }
     }
 
     @include vp-1023 {
-      background-image: url("../img/background/card-background-production-medium.png");
+      background-image: image-set(
+        url("../img/background/card-background-production-medium.webp") 1x,
+        url("../img/background/card-background-production-medium.png") 1x
+      );
 
       @include retina {
-        background-image: url("../img/background/card-background-production-medium@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-production-medium@2x.webp") 2x,
+          url("../img/background/card-background-production-medium@2x.png") 2x
+        );
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/background/card-background-production-small.png");
+      background-image: image-set(
+        url("../img/background/card-background-production-small.webp") 1x,
+        url("../img/background/card-background-production-small.png") 1x
+      );
 
       @include retina {
-        background-image: url("../img/background/card-background-production-small@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-production-small@2x.webp") 2x,
+          url("../img/background/card-background-production-small@2x.png") 2x
+        );
       }
     }
   }
 
   &--assembly {
-    background-image: url("../img/background/card-background-assembly-large.png");
+    background-image: image-set(
+      url("../img/background/card-background-assembly-large.webp") 1x,
+      url("../img/background/card-background-assembly-large.png") 1x
+    );
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../img/background/card-background-assembly-large@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-assembly-large@2x.webp") 2x,
+          url("../img/background/card-background-assembly-large@2x.png") 2x
+        );
       }
     }
 
     @include vp-1023 {
-      background-image: url("../img/background/card-background-assembly-medium.png");
+      background-image: image-set(
+        url("../img/background/card-background-assembly-medium.webp") 1x,
+        url("../img/background/card-background-assembly-medium.png") 1x
+      );
 
       @include retina {
-        background-image: url("../img/background/card-background-assembly-medium@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-assembly-medium@2x.webp") 2x,
+          url("../img/background/card-background-assembly-medium@2x.png") 2x
+        );
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/background/card-background-assembly-small.png");
+      background-image: image-set(
+        url("../img/background/card-background-assembly-small.webp") 1x,
+        url("../img/background/card-background-assembly-small.png") 1x
+      );
 
       @include retina {
-        background-image: url("../img/background/card-background-assembly-small@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-assembly-small@2x.webp") 2x,
+          url("../img/background/card-background-assembly-small@2x.png") 2x
+        );
       }
     }
   }
 
   &--accessories {
-    background-image: url("../img/background/card-background-accessories-large.png");
+    background-image: image-set(
+      url("../img/background/card-background-accessories-large.webp") 1x,
+      url("../img/background/card-background-accessories-large.png") 1x
+    );
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../img/background/card-background-accessories-large@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-accessories-large@2x.webp") 2x,
+          url("../img/background/card-background-accessories-large@2x.png") 2x
+        );
       }
     }
 
     @include vp-1023 {
-      background-image: url("../img/background/card-background-accessories-medium.png");
+      background-image: image-set(
+        url("../img/background/card-background-accessories-medium.webp") 1x,
+        url("../img/background/card-background-accessories-medium.png") 1x
+      );
 
       @include retina {
-        background-image: url("../img/background/card-background-accessories-medium@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-accessories-medium@2x.webp") 2x,
+          url("../img/background/card-background-accessories-medium@2x.png") 2x
+        );
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/background/card-background-accessories-small.png");
+      background-image: image-set(
+        url("../img/background/card-background-accessories-small.webp") 1x,
+        url("../img/background/card-background-accessories-small.png") 1x
+      );
 
       @include retina {
-        background-image: url("../img/background/card-background-accessories-small@2x.png");
+        background-image: image-set(
+          url("../img/background/card-background-accessories-small@2x.webp") 2x,
+          url("../img/background/card-background-accessories-small@2x.png") 2x
+        );
       }
     }
   }

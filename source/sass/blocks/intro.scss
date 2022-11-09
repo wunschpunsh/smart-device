@@ -1,7 +1,11 @@
 .intro {
   position: relative;
   z-index: 1;
-  background-image: url("../img/background/main-background-large.png");
+
+  background-image: image-set(
+    url("../img/background/main-background-large.webp") 1x,
+    url("../img/background/main-background-large.png") 1x
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,25 +13,40 @@
 
   @media (min-width: $vp-1024) {
     @include retina {
-      background-image: url("../img/background/main-background-large@2x.png");
+      background-image: image-set(
+        url("../img/background/main-background-large@2x.webp") 2x,
+        url("../img/background/main-background-large@2x.png") 2x
+      );
     }
   }
 
   @include vp-1023 {
     margin-top: -100px;
-    background-image: url("../img/background/main-background-medium.png");
+    background-image: image-set(
+      url("../img/background/main-background-medium.webp") 1x,
+      url("../img/background/main-background-medium.png") 1x
+    );
 
     @include retina {
-      background-image: url("../img/background/main-background-medium@2x.png");
+      background-image: image-set(
+        url("../img/background/main-background-medium@2x.webp") 2x,
+        url("../img/background/main-background-medium@2x.png") 2x
+      );
     }
   }
 
   @include vp-767 {
     margin-top: -70px;
-    background-image: url("../img/background/main-background-small.png");
+    background-image: image-set(
+      url("../img/background/main-background-small.webp") 1x,
+      url("../img/background/main-background-small.png") 1x
+    );
 
     @include retina {
-      background-image: url("../img/background/main-background-small@2x.png");
+      background-image: image-set(
+        url("../img/background/main-background-small@2x.webp") 2x,
+        url("../img/background/main-background-small@2x.png") 2x
+      );
     }
   }
 
