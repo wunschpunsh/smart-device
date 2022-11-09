@@ -2129,7 +2129,7 @@ button,
   }
 
   .main-nav {
-    padding: 12px 37px 20px 26px;
+    padding: 10px 38px 20px 26px;
   }
 
   .main-nav__logo--visible {
@@ -2276,13 +2276,13 @@ button,
     padding-bottom: 15px;
   }
 
-  .accordion--open .contacts__title,
-  .accordion--open .footer-navigation__title {
+  .accordion--open h3,
+  .accordion--open h3 {
     padding-bottom: 15px;
   }
 
-  .accordion--open .footer-navigation__title::before,
-  .accordion--open .contacts__title::before {
+  .accordion--open h3::before,
+  .accordion--open .h3::before {
     display: none;
   }
 
@@ -2293,7 +2293,7 @@ button,
   }
 
   .intro__container {
-    padding: 149px 24px 190px;
+    padding: 146px 24px 190px;
     margin-bottom: 50px;
   }
 
