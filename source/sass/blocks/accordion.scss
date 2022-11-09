@@ -6,13 +6,13 @@
       padding-bottom: 15px;
     }
 
-    &--open .contacts__title,
-    &--open .footer-navigation__title {
+    &--open h3,
+    &--open h3 {
       padding-bottom: 15px;
     }
 
-    &--open .footer-navigation__title::before,
-    &--open .contacts__title::before {
+    &--open h3::before,
+    &--open .h3::before {
       display: none;
     }
   }

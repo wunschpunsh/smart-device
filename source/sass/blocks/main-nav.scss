@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding: 12px 37px 20px 26px;
+    padding: 10px 38px 20px 26px;
   }
 }
 
@@ -91,8 +91,6 @@
 
 .main-nav__link {
   position: relative;
-  // display: flex;
-  // align-items: center;
   display: inline-block;
   vertical-align: baseline;
   font-family: $ff-pt-mono;
@@ -123,7 +121,6 @@
 }
 
 .main-nav__icon {
-  // display: block;
   display: inline-block;
   margin-right: 7px;
   fill: $color-background-deep-sky-blue;
