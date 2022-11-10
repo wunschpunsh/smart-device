@@ -9,15 +9,9 @@
   }
 
   @include vp-767 {
+    max-width: 620px;
+    margin: 0 auto;
     padding: 10px 38px 20px 26px;
-  }
-}
-
-.main-nav__logo-link {
-  margin-right: 13%;
-
-  @include vp-1023 {
-    margin: 0;
   }
 }
 
@@ -41,8 +35,9 @@
 
 .main-nav__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex-basis: 38%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -56,6 +51,7 @@
   }
 
   @include vp-767 {
+    max-width: 100px;
     flex-basis: 37%;
     margin-right: 0;
   }
@@ -132,7 +128,7 @@
 
 .main-nav__button {
   margin-right: 5%;
-  padding: 10px 15px;
+  padding: 11px 17px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

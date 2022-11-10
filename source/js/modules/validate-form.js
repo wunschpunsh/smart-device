@@ -14,6 +14,24 @@ const onNameValidateInput = (evt) => {
   if (!isValid) {
     input.title = ('Только буквы русского или латинского алфавита');
   }
+
+  const inputValueArray = Array.from(input.value);
+  const arr = [];
+
+  inputValueArray.forEach((item) => {
+    if (item === '-') {
+      arr.push(item);
+    }
+  });
+
+  formButtons.forEach((button) => {
+    if (arr.length > 1) {
+      button.disabled = true;
+      input.title = ('Только одно тире бро');
+    } else {
+      button.disabled = false;
+    }
+  });
 };
 
 const onFormButtonChange = (evt) => {
